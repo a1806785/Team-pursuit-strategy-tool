@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advance Settings</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="stylesheets/Advance_Settings.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Advanced Settings</h1>
+        <form action="javascript:void(0);" method="post">
+            <label>air speed</label>
+            <input type="text" class="input" placeholder="0.3">
+            <br>
+            <label>dt</label>
+            <input type="text" class="input" placeholder="0.025 sec">
+            <br>
+            <label>v0</label>
+            <input type="text" class="input" placeholder="0.1 m/sec">
+            <br>
+            <label>hl length</label>
+            <input type="text" class="input" placeholder="125 m, nominal black line dist">
+            <br>
+            <label>air density</label>
+            <input type="text" class="input" placeholder="1.17 kg/m^3">
+            <br>
+            <label>Bike length</label>
+            <input type="text" class="input" placeholder="1.75 m">
+            <br>
+            <label>spacing</label>
+            <input type="text" class="input" placeholder="0.25 m">
+            <br>
+            <label>weight distribution fr/rr</label>
+            <input type="text" class="input" placeholder="60%">
+            <br>
+            <label>crr front</label>
+            <input type="text" class="input" placeholder="0.0016">
+            <br>
+            <label>crr rear</label>
+            <input type="text" class="input" placeholder="0.0016">
+            <br>
+            <label>mu_scrub</label>
+            <input type="text" class="input" placeholder="0.0072 empirical const.">
+            <br>
+            <label>efficiency</label>
+            <input type="text" class="input" placeholder="97.5% Friction losses in chain and bearings">
+            <br>
+            <label>mol wheel front</label>
+            <input type="text" class="input" placeholder="0.08 kg.m^2">
+            <br>
+            <label>mol wheel rear</label>
+            <input type="text" class="input" placeholder="0.08 kg.m^2">
+            <br>
+            <label>wheel radius</label>
+            <input type="text" class="input" placeholder="0.336m">
+            <br>
+            <label>time standing</label>
+            <input type="text" class="input" placeholder="17 sec">
+            <br>
+            <label>Track geo</label>
+            <input type="text" class="input" placeholder="BRI (Brisbane only)">
+            <br>
+            <label>dist. from black line</label>
+            <input type="text" class="input" placeholder="0.2">
+            <br>
+            <label>lap 1 profile</label>
+            <input type="text" class="input" placeholder="male (choose male or female)">
+            <br>
+            <label>reaction time</label>
+            <input type="text" class="input" placeholder="0.15 sec">
+            <br>
+            <label>2nd team</label>
+            <input type="text" class="input" placeholder="FALSE (Qual or R1 / final?)">
+            <br>
+            <label>3rd rider dist. behind at finish</label>
+            <input type="text" class="input" placeholder="1 (no of bike lengths behind over finish line)">
+        </form>
+
+        <button @click="save" class="button">Save</button>
+        <button @click="return_homepage" class="button">Return Homepage</button>
+    </div>
+
+
+    <script src="javascripts/Advance_Settings.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <title>HomePage</title>
+    <link rel="stylesheet" href="stylesheets/HomePage.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <h1>HomePage</h1>
+        <div id="body">
+
+            <form action="javascript:void(0);" method="post">
+                <label for="Start_Order">Start Order:</label><br>
+                <input type="text" class="input" id="Start_Order" name="Start_Order" placeholder="e.g. AEDB"><br>
+
+                <label for="Number_of_Turns">Number of Turns:</label><br>
+                <input type="text" class="input" id="Number_of_Turns" name="Number_of_Turns"><br>
+
+                <!--<label for="Turn_Duration">Turn Duration:</label><br>
+                <input type="text" class="input" id="Turn_Duration" name="Turn_Duration"><br><br>-->
+
+                <label for="CDA_Scaling">CDA Scaling:</label><br>
+                <input type="text" class="input" id="CDA_Scaling" name="CDA_Scaling"><br><br>
+
+                <button @click="link_rider_profiles" class="button">Rider Profiles</button>
+                <br>
+
+                <button @click="link_to_output" class="button">Calculate</button>
+                <br>
+
+                <button @click="link_to_advanced_settings" class="button">Advanced Settings</button>
+                <br>
+
+
+
+        </div>
+
+
+        <div id="bottom" >
+            <button @click="log_out" class="button" id="logout">Log Out</button>
+        </div>
+
+
+        <div id="select_rider" >
+        </div>
+        <br>
+
+        <div id="guide">
+            <h1>How to use</h1>
+            <p>
+                A user needs to input "start order" e.g. such as AEDB, "number of turns" e.g. A, E, D, B
+                (The letters represent the numerical number of the rider, such as A is rider1 and B is rider2)
+                and "CDA scaling" (e.g. 0.98, 0.7, 0.6, 0.62). Next, The user
+                needs to click the "Rider Profiles" button to input rider attributes. And the user can click the
+                "Advanced Settings" to change default values of constants. Then, the user must select 5
+                riders from the drop down selection boxes. Finally, the user can click the
+                "Calculate" button to get result.
+            </p>
+        </div>
+    </div>
+
+    <script src="javascripts/HomePage.js"></script>
+</body>
+
+</html>

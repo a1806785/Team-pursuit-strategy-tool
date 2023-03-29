@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <title>HomePage</title>
+    <link rel="stylesheet" href="stylesheets/Rider_Profiles.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <h1>Rider Profiles</h1>
+
+        <div class="center_button">
+            <button @click="add_new_rider" class="button add_button">Add new rider</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button @click="return_homepage" class="button return_button">Return Homepage</button>
+        </div>
+        <br>
+
+        <div id="table">
+
+            <table id="tfhover" class="tftable" border="1">
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Rider ID</th>
+                    <th>Mass</th>
+                    <th>CDA Seated</th>
+                    <th>Seat Height</th>
+                    <th>Critical Power</th>
+                    <th>Turn 1 Power</th>
+                    <th>Turn 2 Power</th>
+                    <th>Turn 3 Power</th>
+                    <th>Turn 4 Power</th>
+                    <th>Turn 5 Power</th>
+                    <th>CDA Standing</th>
+                    <th>Energy Total/KJ</th>
+                    <th>Over CP Energy</th>
+                    <th>5 sec Power</th>
+                    <th>1 min Power</th>
+                    <th>3 min Power</th>
+                </tr>
+                <tr>
+                    <td>Rider 1</td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                </tr>
+                <tr>
+                    <td>Rider 2</td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                </tr>
+                <tr>
+                    <td>Rider 3</td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                </tr>
+                <tr>
+                    <td>Rider 4</td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                </tr>
+                <tr>
+                    <td>Rider 5</td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                </tr>
+                <tr>
+                    <td>Rider 6</td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                </tr>
+                <tr>
+                    <td>Rider 7</td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                </tr>
+                <tr>
+                    <td>Rider 8</td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                </tr>
+                <tr>
+                    <td>Rider 9</td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                </tr>
+                <tr>
+                    <td>Rider 10</td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                    <td contentEditable="true"></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+
+        <!-- <div id="bottom">
+        </div> -->
+    </div>
+
+    <script src="javascripts/Rider_Profiles.js"></script>
+</body>
+
+</html>

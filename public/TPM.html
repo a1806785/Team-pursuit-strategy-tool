@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/TPM.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <title>TPM</title>
+</head>
+
+<body>
+    <div id="app" class="container">
+        <div id="header">
+            <h1 >Team Pursuit Modeling Tool</h1>
+        </div>
+
+        <div id="body">
+            <div class="from">
+                <form action="javascript:void(0);" method="post">
+                    <label for="username">Username:</label><br>
+                    <input type="text" class="input" id="username" name="username"><br>
+                    <label for="lname">Password:</label><br>
+                    <input type="password" class="input" id="password" name="password"><br><br>
+                    <button @click="register" class="button">Register</button>
+                    <button @click="login" class="button">Log In</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="bottom">
+        </div>
+    </div>
+
+    <script src="javascripts/login.js"></script>
+</body>
+</html>
